@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>USET University Admission Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="container">
+
+    <!-- Header with Auto-Resizing USET Logo -->
+    <header class="form-header">
+      <img src="uset-logo.png" alt="USET University Logo" class="logo" />
+      <div>
+        <h1>USET University Admission Form</h1>
+        <p class="subtitle">University of Skill Enrichment & Technology</p>
+      </div>
+    </header>
+
+    <form class="admission-form" action="#" method="post" novalidate>
+
+      <!-- Personal Information -->
+      <section class="card">
+        <h2>Personal Information</h2>
+        <div class="grid two-col">
+
+          <label>
+            <span>Full Name</span>
+            <input type="text" name="full_name" placeholder="Abdul Hannan Rahat" required />
+          </label>
+
+          <label>
+            <span>Date of Birth</span>
+            <input type="date" name="dob" required />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="example@mail.com" required />
+          </label>
+
+          <label>
+            <span>Phone Number</span>
+            <input type="tel" name="phone" placeholder="01XXXXXXXXX" required />
+          </label>
+
+          <fieldset class="full-width">
+            <legend>Gender</legend>
+            <div class="inline-group">
+              <label><input type="radio" name="gender" value="male" required /> Male</label>
+              <label><input type="radio" name="gender" value="female" /> Female</label>
+              <label><input type="radio" name="gender" value="other" /> Other</label>
+            </div>
+          </fieldset>
+
+        </div>
+      </section>
+
+      <!-- Address -->
+      <section class="card">
+        <h2>Address</h2>
+        <div class="grid two-col">
+
+          <label class="full-width">
+            <span>Street Address</span>
+            <input type="text" name="address" placeholder="House/Street/Road" required />
+          </label>
+
+          <label>
+            <span>City</span>
+            <input type="text" name="city" placeholder="Dhaka" required />
+          </label>
+
+          <label>
+            <span>State/Province</span>
+            <input type="text" name="state" placeholder="State / Division" />
+          </label>
+
+          <label>
+            <span>Postal Code</span>
+            <input type="text" name="postal" placeholder="1420" />
+          </label>
+
+          <label class="full-width">
+            <span>Country</span>
+            <select name="country" required>
+              <option value="">-- Select Country --</option>
+              <option value="Bangladesh" selected>Bangladesh</option>
+              <option value="India">India</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+
+        </div>
+      </section>
+
+      <!-- Educational Background -->
+      <section class="card">
+        <h2>Educational Background</h2>
+        <div class="grid two-col">
+
+          <label>
+            <span>High School Name</span>
+            <input type="text" name="school" required />
+          </label>
+
+          <label>
+            <span>Graduation Year</span>
+            <input type="number" name="grad_year" min="2000" max="2099" placeholder="2023" required />
+          </label>
+
+          <label>
+            <span>GPA / Percentage</span>
+            <input type="text" name="gpa" placeholder="4.00 / 85%" required />
+          </label>
+
+          <label class="full-width">
+            <span>Upload Documents (photo/transcript)</span>
+            <input type="file" name="documents" accept="image/*,application/pdf" />
+          </label>
+
+        </div>
+      </section>
+
+      <!-- Program Selection -->
+      <section class="card">
+        <h2>Program Selection</h2>
+        <div class="grid">
+
+          <label class="full-width">
+            <span>Choose Major / Department</span>
+            <select name="department" required>
+              <option value="">-- Select Major --</option>
+              <option value="CSE">CSE</option>
+              <option value="EEE">EEE</option>
+              <option value="BBA">BBA</option>
+              <option value="English">English</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+
+          <fieldset class="full-width">
+            <legend>Interested Subjects (optional)</legend>
+            <div class="inline-group">
+              <label><input type="checkbox" value="Programming" /> Programming</label>
+              <label><input type="checkbox" value="Math" /> Mathematics</label>
+              <label><input type="checkbox" value="Physics" /> Physics</label>
+              <label><input type="checkbox" value="Management" /> Management</label>
+            </div>
+          </fieldset>
+
+        </div>
+      </section>
+
+      <!-- Personal Statement -->
+      <section class="card">
+        <h2>Personal Statement</h2>
+        <label class="full-width">
+          <span>Write a short personal statement</span>
+          <textarea name="statement" rows="6" placeholder="Write here..." required></textarea>
+        </label>
+      </section>
+
+      <!-- Buttons -->
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Submit Application</button>
+        <button type="reset" class="btn secondary">Reset</button>
+      </div>
+
+      <p class="note">By submitting you agree that the information is true.</p>
+
+    </form>
+
+    <footer class="footer">
+      <small>Prepared by Abdul Hannan Rahat </small>
+    </footer>
+
+  </main>
+
+</body>
+</html>
